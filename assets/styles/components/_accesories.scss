@@ -70,5 +70,63 @@
     line-height: 1.4;
     font-family: Acrom, sans-serif;
   }
-}
 
+  @media (max-width:1280px) {
+    &__grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  @media (max-width:1100px) {
+    &__filter {
+      width: 95%;
+    }
+  }
+  @media (max-width:990px) {
+    &__grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  @media (max-width:760px) {
+    &__filter {
+      width: 100%;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__select {
+      width: 95%;
+    }
+    &__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    &__button {
+      margin-top: 20px;
+      width: 95%;
+    }
+  }
+  @media (max-width:425px) {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width:360px) {
+    &__select {
+      font-size: 12px;
+    }
+    &__select:after {
+      width: 30px;
+      content: url(../img/accesories/arrow-down.png);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px 9px 1px 9px;
+      border-left: 1px solid #dadada;
+      // box-sizing: border-box;
+      background: #ec001f;
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      right: 1px;
+    }
+  }
+}
