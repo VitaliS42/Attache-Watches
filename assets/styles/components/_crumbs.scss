@@ -32,6 +32,10 @@
   @media (max-width:767px) {
     &__list {
       flex-direction: column;
+      justify-content: space-between;
+    }
+    &__link-bold {
+      line-height: 1.31;
     }
   }
 }

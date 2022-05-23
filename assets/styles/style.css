@@ -468,6 +468,12 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .crumbs__link-bold {
+    line-height: 1.31;
   }
 }
 
@@ -2418,6 +2424,10 @@ ul {
   .minimalTop__container {
     height: 50px;
   }
+  .minimalTop__heading-mini {
+    font-size: 3vw;
+    text-align: center;
+  }
 }
 
 .filters {
@@ -3355,6 +3365,29 @@ ul {
   background-color: #000000;
 }
 
+@media (max-width: 1100px) {
+  .service__flex {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .service__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  .service__mail {
+    padding: 15px 30px;
+  }
+}
+
 .order {
   text-transform: uppercase;
   font-family: Acrom, sans-serif;
@@ -3562,6 +3595,86 @@ ul {
   font-family: Acrom, sans-serif;
 }
 
+@media (max-width: 1280px) {
+  .accesories__grid {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1100px) {
+  .accesories__filter {
+    width: 95%;
+  }
+}
+
+@media (max-width: 990px) {
+  .accesories__grid {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .accesories__filter {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .accesories__select {
+    width: 95%;
+  }
+  .accesories__grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .accesories__button {
+    margin-top: 20px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 425px) {
+  .accesories__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 360px) {
+  .accesories__select {
+    font-size: 12px;
+  }
+  .accesories__select:after {
+    width: 30px;
+    content: url(../img/accesories/arrow-down.png);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 8px 9px 1px 9px;
+    border-left: 1px solid #dadada;
+    background: #ec001f;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    right: 1px;
+  }
+}
+
 .bling {
   margin: 0 5px 40px 5px;
 }
@@ -3588,7 +3701,8 @@ ul {
 }
 
 .bling__img {
-  width: 30%;
+  width: 77px;
+  height: 285px;
 }
 
 .bling__name {
@@ -3637,6 +3751,13 @@ ul {
   cursor: pointer;
   color: #ffffff;
   background-color: #000;
+}
+
+@media (max-width: 500px) {
+  .bling__img {
+    width: 54px;
+    height: 222px;
+  }
 }
 
 .button-block {
