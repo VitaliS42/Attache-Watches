@@ -1,0 +1,93 @@
+.distributers {
+  margin-bottom: 100px;
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__heading {
+    margin-top: 20px;
+    font-family: Acrom;
+    font-size: 29.7px;
+    line-height: 1.2;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #000000;
+    margin-bottom: 18px;
+  }
+  &__grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 30px;
+  }
+  &__item {
+    border-top: 1px solid #c7c7c9;
+  }
+  &__name {
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.4;
+    font-family: Acrom, sans-serif;
+  }
+  &__deco {
+    border: none;
+    background-color: #ec001f;
+    height: 2px;
+  }
+  &__adress {
+    padding-top: 5px;
+    display: block;
+    font-weight: 500;
+    font-size: 80%;
+    margin-bottom: 5px;
+    line-height: 1.4;
+    font-family: Acrom, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__phone {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: Acrom, sans-serif;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+  }
+  &__bottom {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__person {
+    margin-top: 20px;
+  }
+  &__invitation {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-family: Acrom;
+  }
+  &__button {
+    color: #000000;
+    border: 2px solid #000;
+    font-weight: 500;
+    padding: 15px 70px;
+    transition: .3s ease-in-out;
+    text-transform: uppercase;
+    font-family: Acrom;
+  }
+  &__button:hover {
+    color: #ffffff;
+    background-color: #000000;
+  }
+}

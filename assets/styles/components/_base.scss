@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.redline-bold {
+  background-color: #ec001f;
+  height: 8px;
+  width: 65px;
+}
+.redline-thin {
+
+}
+
+.whitespace {
+  height: 69px;
+  width: 100%;
+  border-top: 3px solid #000000;
+  position: absolute;
+  bottom: -40px;
+  background-color: #ffffff;
+  &__block {
+    height: 69px;
+    position: relative;
+  }
+}

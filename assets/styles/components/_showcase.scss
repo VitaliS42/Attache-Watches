@@ -1,0 +1,59 @@
+.showcase {
+  &__colored {
+    background-color: #ffffff;
+  }
+  & h2 {
+    font-family: Acrom;
+    font-size: 29.8px;
+    line-height: 1.2;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #000000;
+  }
+  &__decor {
+    height: 3px;
+    border: 0;
+    background-color: #ff0926;
+    width: 80px;
+    margin-top: 18px;
+  }
+  &__block {
+    padding-top: 67px;
+    padding-bottom: 48px;
+  }
+  &__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  &__slide {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  &__button-wrapper {
+    margin-top: 43px;
+    display: flex;
+    justify-content: center;
+  }
+  &__button {
+    font-family: Acrom;
+    font-size: 13.6px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    color: #08090b;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    padding: 28px 67px 30px 64px;
+    transition: 1s;
+  }
+  &__button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}

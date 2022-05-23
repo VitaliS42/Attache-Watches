@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attache-Cart</title>
+  <link rel="stylesheet" href="../assets/styles/style.css">
+  <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Хедер -->
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__flex">
+
+          <div class="header__left">
+            <a href="index.html">
+              <img src="../assets/img/header/header-logo.png" alt="Logo">
+            </a>
+          </div>
+
+          <div class="header__center">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#">Часы
+                  <div class="header__link-marker"></div>
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Аксессуары</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Бренд
+                  
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Где купить</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Паспорт</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header__right">
+            <ul class="header__list">
+              <li class="header__button header__details-block"><details class="header__details">
+                <summary>ENG </summary>
+                <div class="header__details-content">
+                  <a class="header__language" href="">English</a>
+                  <a class="header__language" href="">Russian</a>
+                </div>
+              </details></li>
+              <li class="header__button"><a href=""><img src="../assets/img/header/profile.svg" alt="User"></a></li>
+              <li class="header__button"><a href=""><img src="../assets/img/header/shopping-bag.svg" alt="Shopping Cart"></a></li>
+              <li class="header__button"><a href=""><img src="../assets/img/header/email.svg" alt="Mail"></a></li>
+              <li class="header__button"><a href=""><img src="../assets/img/header/search.svg" alt="Search"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="crumbs">
+      <div class="container">
+        <ul class="crumbs__list">
+          <li class="crumbs__item"><a class="crumbs__link-bold" href="index.html">Главная ></a></li>
+          <li class="crumbs__item"><a class="crumbs__link" href="index.html">Бренд</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+
+  <section class="minimalTop">
+    <div class="container">
+      <div class="minimalTop__name">
+        <h1 class="minimalTop__heading">Корзина</h1>
+        <hr class="minimalTop__deco">
+      </div>
+      <div class="minimalTop__container">
+        <div class="redline-bold"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cart">
+    <div class="container">
+      <div class="cart-block">
+        <div class="cart__head">
+          <div class="cart__firstCol cart__borderless cart__cell">МОДЕЛЬ</div>
+          <div class="cart__secondCol cart__borderless cart__cell">НАИМЕНОВАНИЕ / ЦЕНА / КОЛИЧЕСТВО</div>
+          <div class="cart__thirdCol cart__borderless cart__cell">ЗАКАЗ КОРЗИНЫ</div>
+        </div>
+        
+        <div class="cart__container">
+          <div class="cart__line">
+            <div class="cart__firstCol cart__cell"><img class="cart__image" src="../assets/img/cart/watch-3.png" alt="Good"></div>
+            <div class="cart__secondCol cart__cell">
+              <div class="cart__label">
+                <h3 class="cart__name">FRIGATE</h3>
+                <span class="cart__type">ХРОНОГРАФ</span>
+                <hr>
+                <h4 class="cart__size">ДИАМЕТР КОПУСА 42 ММ</h4>
+                <span class="cart__number">АРТИКУЛ 01/001/01</span>
+                <hr>
+                <span class="cart__case">ПОЛИРОВАННОЕ/ХРОМИРОВАННОЕ</span>
+                <hr>
+                <h3 class="cart__price">27 500 ₽</h3>
+                <hr>
+                <div class="cart__quantity">
+                  <span class="cart__amount">количество</span>
+                  <input class="cart__input" type="text" name="count" maxlength="1" data-idx="0" value="1">
+                  <button class="cart__remove"></button>
+                </div>
+              </div>
+            </div>
+            <div class="cart__thirdCol cart__borderless cart__cell ">
+              <div class="cart__checkout">
+                <span class="cart__sum">ПРЕДВАРИТЕЛЬНЫЙ ИТОГ ЗАКАЗА</span>
+                <span class="cart__sum-amount">192 500 ₽</span>
+                <hr class="cart__deco">
+                <span class="cart__sum-big">ОБЩАЯ СТОИМОСТЬ ЗАКАЗА</span>
+                <span class="cart__sum-big-amount">192 500 ₽</span>
+                <button class="cart__button">СДЕЛАТЬ ЗАКАЗ</button>
+              </div>
+            </div>
+          </div>
+          <div class="cart__line">
+            <div class="cart__firstCol cart__cell"><img class="cart__image" src="../assets/img/cart/watch-3.png" alt="Good"></div>
+            <div class="cart__secondCol cart__cell">
+              <div class="cart__label">
+                <h3 class="cart__name">FRIGATE</h3>
+                <span class="cart__type">ХРОНОГРАФ</span>
+                <hr>
+                <h4 class="cart__size">ДИАМЕТР КОПУСА 42 ММ</h4>
+                <span class="cart__number">АРТИКУЛ 01/001/01</span>
+                <hr>
+                <span class="cart__case">ПОЛИРОВАННОЕ/ХРОМИРОВАННОЕ</span>
+                <hr>
+                <h3 class="cart__price">27 500 ₽</h3>
+                <hr>
+                <div class="cart__quantity">
+                  <span class="cart__amount">количество</span>
+                  <input class="cart__input" type="text" name="count" maxlength="1" data-idx="0" value="1">
+                  <button class="cart__remove"></button>
+                </div>
+              </div>
+            </div>
+            <div class="cart__thirdCol cart__cell ">
+            </div>
+          </div>
+        </div>
+        
+        <div class="cart__bottom">
+          <div class="cart__firstCol cart__cell"><a class="cart__link-decorated" href="#">ДОБАВИТЬ ЕЩЕ ЧАСЫ</a></div>
+          <div class="cart__secondCol cart__cell"><a class="cart__link-decorated" href="#">КУПИТЬ ДОПОЛНИТЕЛЬНЫЕ БРАСЛЕТЫ ИЛИ ДРУГИЕ АКСЕССУАРЫ</a></div>
+          <div class="cart__thirdCol cart__cell"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <div class="container">
+    <div class="whitespace__block">
+      <div class="whitespace"></div>
+    </div>
+  </div>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__flex">
+        <!-- Текстовые ссылки -->
+        <div class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="#">Новости</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Вакансии</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Магазины в россии и мире</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Дистрибьютер - стать официальным партнером</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Гарантия и сервис</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <!-- Ссылки на соцсети -->
+        <div class="footer__social">
+          <ul class="footer__list">
+            <li class="footer__item-social"><a href="#"><img src="../assets/img/footer/instagram.png" alt="Instagram"></a></li>
+            <li class="footer__item-social"><a href="#"><img src="../assets/img/footer/facebook.png" alt="Facebook"></a></li>
+            <li class="footer__item-social"><a href="#"><img src="../assets/img/footer/youtube.png" alt="Youtube"></a></li>
+            <li class="footer__item-social"><a href="#"><img src="../assets/img/footer/twitter.png" alt="Twitter"></a></li>
+            <li class="footer__item-social"><a href="#"><img src="../assets/img/footer/linkedin.png" alt="LinkedIn"></a></li>
+            <li class="footer__item-social"><a href="#"><img src="../assets/img/footer/google-plus.png" alt="Google-Plus"></a></li>
+            <li class="footer__item-social"><a href="#"><img src="../assets/img/footer/behance.png" alt="Behance"></a></li>
+            <li class="footer__item-social"><a href="#"><img src="../assets/img/footer/pinterest.png" alt="Pinterest"></a></li>
+          </ul>
+        </div>
+        <!-- Красное лого -->
+        <div class="footer__logo">
+          <img src="../assets/img/footer/footer-logo.png" alt="Logo">
+        </div>
+        <!-- Красная полоска -->
+        <hr>
+        <!-- Копирайт -->
+        <div class="footer__copyright">© 2022 ATTACHE - Все права на интеллектуальную собственность защищены</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

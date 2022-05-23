@@ -1,0 +1,20 @@
+.brand {
+  &__top {
+    margin-top: -144px;
+    background: url(../img/brand/top-back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__heading {
+    font-family: Acrom;
+    font-size: 61.8px;
+    line-height: 1.2;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 450px;
+    padding-bottom: 330px;
+  }
+}

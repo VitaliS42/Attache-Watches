@@ -1,0 +1,82 @@
+.warranty {
+  background-color: #f3f3f3;
+  & h2 {
+    font-family: Acrom;
+    font-size: 29.8px;
+    line-height: 1.2;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #000000;
+  }
+  & p {
+    font-family: Acrom;
+    font-size: 18.6px;
+    line-height: 29px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  & hr {
+    height: 4px;
+    border: 0;
+    background-color: #fd0000;
+    width: 80px;
+    margin-top: 18px;
+    margin-bottom: 51px;
+  }
+  &__container {
+    margin: 0 auto;
+    max-width: 760px;
+  }
+  &__flex {
+    box-sizing: border-box;
+    padding-top: 121px;
+    padding-bottom: 83px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__p-bright {
+    color: #373737;
+  }
+  &__p-dark {
+    color: #000000;
+  }
+  &__button {
+    margin-top: 31px;
+    padding: 32px 69px 30px 68px;
+    font-family: Acrom;
+    font-size: 13.6px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    color: #000000;
+    border: 3px solid black;
+    transition-duration: 1s;
+  }
+  &__button:hover {
+    cursor: pointer;
+    color: #f3f3f3;
+    background-color: #000000;
+  }
+  &__wrap {
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &__link {
+    text-align: center;
+    text-decoration: none;
+    font-family: Acrom;
+    font-size: 22.3px;
+    line-height: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #000000;
+    display: flex;
+    align-items: center;
+  }
+}

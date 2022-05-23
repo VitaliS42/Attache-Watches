@@ -1,0 +1,64 @@
+@import "../fonts/Acrom/acrom";
+@import "components/base";
+// Стиль заголовка
+@import "components/header";
+// Стиль "хлебных крошек"
+@import "components/crumbs";
+// Стиль подвала
+@import "components/footer";
+// Стили главной страницы
+@import "components/top"; // верхний баннер
+@import "components/showcase"; // слайдер с витриной часов
+@import "components/clock"; // стиль карточки с часами
+@import "components/new-collection"; // стиль баннера новой коллекции
+@import "components/options"; // блок кнопок
+@import "components/warranty"; //краткий блок гарантии
+@import "components/news"; // краткий блок новостей
+
+// Стили страницы коллекции
+@import "components/model-filter"; // Фильтрация в рамках коллекции
+@import "components/collection-top"; // Баннер страницы коллекции
+@import "components/collection-block"; // Блок с моделями коллекции
+
+// Стили главной страницы магазина
+@import "components/shopTop"; // верхняя часть с витриной
+@import "components/departments"; // кнопки перехода в другие разделы
+@import "components/presentation"; //  презентация новой коллекции
+
+// Стили карточки часов
+@import "components/showWatch"; // блок характеристик и цены
+@import "components/watchCard"; //блок статьи и фото модели
+
+// Стили страницы коллекции с фильтром
+@import "components/minimalTop"; // верх страницы без баннера
+@import "components/filters"; // фильтры подбора модели
+@import "components/overview"; // вспомогательные элементы страницы
+
+// Стили страницы о бренде
+@import "components/brand"; // баннер с названием
+@import "components/team"; // фото и текст о команде
+@import "components/story"; // блоки истории бренда
+
+// Стили корзины
+@import "components/cart";
+
+// Стиль польз.соглашения
+@import "components/policy";
+
+// Стиль страницы Дистрибьютеров
+@import "components/distributers";
+
+// Стиль страницы с адресами магазинов
+@import "components/shops";
+
+// Стиль страницы гарантии и сервиса
+@import "components/service";
+
+// Стиль страницы с историей заказов
+@import "components/profile";
+
+// Стиль страницы аксессуаров
+@import "components/accesories";
+@import "components/bling";
+
+@import "components/button-block";

@@ -1,0 +1,87 @@
+.collection-block {
+  padding-top: 34px;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 35px;
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__heading {
+    font-family: Acrom;
+    font-size: 29.7px;
+    line-height: 1.2;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #000000;
+    margin-bottom: 18px;
+  }
+  &__redline {
+    width: 80px;
+    height: 3px;
+    background-color: #ff0220;
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__text {
+    font-family: Acrom;
+    font-size: 22.3px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 16px;
+  }
+  &__border {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #c3c3c3;
+    border: none;
+    height: 1px;
+    width: 100%;
+  }
+  &__grid {
+    margin-top: -1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  &__button-wrapper {
+    margin-top: 77px;
+    margin-bottom: 140px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  &__button {
+    font-family: Acrom;
+    font-size: 13.6px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    color: #08090b;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    padding: 28px 67px 30px 64px;
+    transition: 1s;
+  }
+  &__button:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  &__bottom {
+    height: 63px;
+    width: 100%;
+    border-top: 3px solid #000000;
+    position: absolute;
+    bottom: -165px;
+    background-color: #ffffff;
+  }
+}

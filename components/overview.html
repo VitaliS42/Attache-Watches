@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attache - Catalog</title>
+  <link rel="stylesheet" href="../assets/styles/style.css">
+  <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Хедер -->
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__flex">
+          <div class="header__left">
+            <a href="index.html">
+              <img src="../assets/img/header/header-logo.png" alt="Logo">
+            </a>
+          </div>
+          <div class="header__center">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#">Часы
+                  <div class="header__link-marker"></div>
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Аксессуары</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Бренд</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Где купить</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Паспорт</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__right">
+            <ul class="header__list">
+              <li class="header__button header__details-block"><details class="header__details">
+                <summary>ENG </summary>
+                <div class="header__details-content">
+                  <a class="header__language" href="">English</a>
+                  <a class="header__language" href="">Russian</a>
+                </div>
+              </details></li>
+              <li class="header__button"><a href=""><img src="../assets/img/header/profile.svg" alt="User"></a></li>
+              <li class="header__button"><a href=""><img src="../assets/img/header/shopping-bag.svg" alt="Shopping Cart"></a></li>
+              <li class="header__button"><a href=""><img src="../assets/img/header/email.svg" alt="Mail"></a></li>
+              <li class="header__button"><a href=""><img src="../assets/img/header/search.svg" alt="Search"></a></li>
+              
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="crumbs">
+      <div class="container">
+        <div>
+          <ul class="crumbs__list">
+            <li class="crumbs__item"><a class="crumbs__link-bold" href="index.html">Главная ></a></li>
+            <li class="crumbs__item"><a class="crumbs__link" href="index.html">Часы</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="minimalTop">
+    <div class="container">
+      <div class="minimalTop__name">
+        <h1 class="minimalTop__heading">Коллекция</h1>
+        <hr class="minimalTop__deco">
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="filters">
+        <div class="filters__select">
+          <select name="model">
+            <option selected="selected">модель/коллекция</option>
+            <option value="value1">Значение 1</option>
+            <option value="value2">Значение 2</option>
+            <option value="value3">Значение 3</option>
+          </select>
+        </div>
+        <div class="filters__select">
+          <select name="material">
+            <option selected="selected">материал корпуса</option>
+            <option value="value1">Значение 1</option>
+            <option value="value2">Значение 2</option>
+            <option value="value3">Значение 3</option>
+          </select>
+        </div>
+        <div class="filters__select">
+          <select name="cover">
+            <option selected="selected">покрытие корпуса</option>
+            <option value="value1">Значение 1</option>
+            <option value="value2">Значение 2</option>
+            <option value="value3">Значение 3</option>
+          </select>
+        </div>
+        <div class="filters__select">
+          <select name="mechanizm">
+            <option selected="selected">тип механизма</option>
+            <option value="value1">Значение 1</option>
+            <option value="value2">Значение 2</option>
+            <option value="value3">Значение 3</option>
+          </select>
+        </div>
+        <div class="filters__select">
+          <select name="functions">
+            <option selected="selected">функции механизма</option>
+            <option value="value1">Значение 1</option>
+            <option value="value2">Значение 2</option>
+            <option value="value3">Значение 3</option>
+          </select>
+        </div>
+        <div class="filters__select">
+          <select name="water">
+            <option selected="selected">водозвщита</option>
+            <option value="value1">Значение 1</option>
+            <option value="value2">Значение 2</option>
+            <option value="value3">Значение 3</option>
+          </select>
+        </div>
+        <div class="filters__select">
+          <select name="bracelet">
+            <option selected="selected">ремень/браслет</option>
+            <option value="value1">Значение 1</option>
+            <option value="value2">Значение 2</option>
+            <option value="value3">Значение 3</option>
+          </select>
+        </div>
+        <div class="filters__select">
+          <select name="price">
+            <option selected="selected">цена</option>
+            <option value="value1">Значение 1</option>
+            <option value="value2">Значение 2</option>
+            <option value="value3">Значение 3</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="overview__container">
+      <div class="redline-bold"></div>
+    </div>
+  </section>
+
+  <section class="collection-block">
+    <div class="container">
+      <div class="collection-block__wrap">
+        <div class="collection-block__left">
+          <h2 class="collection-block__heading">Pilot</h2>
+          <div class="collection-block__redline"></div>
+        </div>
+        <div class="collection-block__right">
+          <span class="collection-block__text">15 моделей</span>
+          <div class="collection-block__redline"></div>
+        </div>
+      </div>
+    </div>
+    <hr class="collection-block__border">
+    <div class="container">
+      <div class="collection-block__grid">
+        <a class="clock__link clock__link-bordered" href="#">
+          <div class="clock">
+            <img class="clock__img" src="../assets/img/clock/watch-1.png" alt="Watch">
+            <h2 class="clock__head">Pilot</h2>
+            <span class="clock__name">chronograph</span>
+            <hr class="clock__deco">
+            <span class="clock__art">AРТ 2420.350.1</span>
+            <div class="clock__price">
+              <span class="clock__amount">30 000</span>
+              <span class="clock__currency">₽</span>
+            </div>
+            <hr class="clock__redline">
+          </div>
+        </a>
+        <a class="clock__link clock__link-bordered" href="#">
+          <div class="clock">
+            <img class="clock__img" src="../assets/img/clock/watch-2.png" alt="Watch">
+            <h2 class="clock__head">Pilot</h2>
+            <span class="clock__name">AUTOMATIC</span>
+            <hr class="clock__deco">
+            <span class="clock__art">AРТ 2420.350.1</span>
+            <div class="clock__price">
+              <span class="clock__amount">25 000</span>
+              <span class="clock__currency">₽</span>
+            </div>
+            <hr class="clock__redline">
+          </div>
+        </a>
+        <a class="clock__link clock__link-bordered" href="#">
+          <div class="clock">
+            <img class="clock__img" src="../assets/img/clock/watch-3.png" alt="Watch">
+            <h2 class="clock__head">Pilot</h2>
+            <span class="clock__name">24 Hour</span>
+            <hr class="clock__deco">
+            <span class="clock__art">AРТ 2420.350.1</span>
+            <div class="clock__price">
+              <span class="clock__amount">20 000</span>
+              <span class="clock__currency">₽</span>
+            </div>
+            <hr class="clock__redline">
+          </div>
+        </a>
+        <a class="clock__link clock__link-bordered" href="#">
+          <div class="clock">
+            <img class="clock__img" src="../assets/img/clock/watch-4.png" alt="Watch">
+            <h2 class="clock__head">Pilot</h2>
+            <span class="clock__name">AUTOMATIC</span>
+            <hr class="clock__deco">
+            <span class="clock__art">AРТ 2420.350.1</span>
+            <div class="clock__price">
+              <span class="clock__amount">25 000</span>
+              <span class="clock__currency">₽</span>
+            </div>
+            <hr class="clock__redline">
+          </div>
+        </a>
+      </div>
+    </div>
+    <hr class="collection-block__border">
+    <div class="showcase__button-wrapper">
+      <button class="showcase__button">Посмотреть всю коллекцию</button>
+    </div>
+    <div class="overview__expand-wrapper">
+      <button class="overview__button"><img src="../assets/img/overview/red-triangle.svg" alt=""></button>
+    </div>
+  </section>
+  <hr class="overview__divider">
+  <section class="collection-block">
+    <div class="container">
+      <div class="collection-block__wrap">
+        <div class="collection-block__left">
+          <h2 class="collection-block__heading">Deep sea</h2>
+          <div class="collection-block__redline"></div>
+        </div>
+        <div class="collection-block__right">
+          <span class="collection-block__text">4 модели</span>
+          <div class="collection-block__redline"></div>
+        </div>
+      </div>
+    </div>
+    <hr class="collection-block__border">
+    <div class="container">
+      <div class="collection-block__grid">
+        <a class="clock__link clock__link-bordered" href="#">
+          <div class="clock">
+            <img class="clock__img" src="../assets/img/clock/watch-1.png" alt="Watch">
+            <h2 class="clock__head">Pilot</h2>
+            <span class="clock__name">chronograph</span>
+            <hr class="clock__deco">
+            <span class="clock__art">AРТ 2420.350.1</span>
+            <div class="clock__price">
+              <span class="clock__amount">30 000</span>
+              <span class="clock__currency">₽</span>
+            </div>
+            <hr class="clock__redline">
+          </div>
+        </a>
+        <a class="clock__link clock__link-bordered" href="#">
+          <div class="clock">
+            <img class="clock__img" src="../assets/img/clock/watch-2.png" alt="Watch">
+            <h2 class="clock__head">Pilot</h2>
+            <span class="clock__name">AUTOMATIC</span>
+            <hr class="clock__deco">
+            <span class="clock__art">AРТ 2420.350.1</span>
+            <div class="clock__price">
+              <span class="clock__amount">25 000</span>
+              <span class="clock__currency">₽</span>
+            </div>
+            <hr class="clock__redline">
+          </div>
+        </a>
+        <a class="clock__link clock__link-bordered" href="#">
+          <div class="clock">
+            <img class="clock__img" src="../assets/img/clock/watch-3.png" alt="Watch">
+            <h2 class="clock__head">Pilot</h2>
+            <span class="clock__name">24 Hour</span>
+            <hr class="clock__deco">
+            <span class="clock__art">AРТ 2420.350.1</span>
+            <div class="clock__price">
+              <span class="clock__amount">20 000</span>
+              <span class="clock__currency">₽</span>
+            </div>
+            <hr class="clock__redline">
+          </div>
+        </a>
+        <a class="clock__link clock__link-bordered" href="#">
+          <div class="clock">
+            <img class="clock__img" src="../assets/img/clock/watch-4.png" alt="Watch">
+            <h2 class="clock__head">Pilot</h2>
+            <span class="clock__name">AUTOMATIC</span>
+            <hr class="clock__deco">
+            <span class="clock__art">AРТ 2420.350.1</span>
+            <div class="clock__price">
+              <span class="clock__amount">25 000</span>
+              <span class="clock__currency">₽</span>
+            </div>
+            <hr class="clock__redline">
+          </div>
+        </a>
+      </div>
+    </div>
+    <hr class="collection-block__border">
+    <div class="showcase__button-wrapper">
+      <button class="showcase__button">Посмотреть всю коллекцию</button>
+    </div>
+    <div class="overview__expand-wrapper">
+      <button class="overview__button"><img src="../assets/img/overview/red-triangle.svg" alt=""></button>
+    </div>
+  </section>
+
+  <hr class="overview__divider">
+
+  <div class="container">
+    <div class="mainWatch__whitespace-block">
+      <div class="mainWatch__whitespace"></div>
+    </div>
+  </div>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__flex">
+        <!-- Текстовые ссылки -->
+        <div class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="#">Новости</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Вакансии</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Магазины в россии и мире</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Дистрибьютер - стать официальным партнером</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Гарантия и сервис</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <!-- Ссылки на соцсети -->
+        <div class="footer__social">
+          <ul class="footer__list">
+            <li class="footer__item-social"><a href="#"><img src="../assets/img/footer/instagram.png" alt="Instagram"></a></li>
+            <li class="footer__item-social"><a href="#"><img src="../assets/img/footer/facebook.png" alt="Facebook"></a></li>
+            <li class="footer__item-social"><a href="#"><img src="../assets/img/footer/youtube.png" alt="Youtube"></a></li>
+            <li class="footer__item-social"><a href="#"><img src="../assets/img/footer/twitter.png" alt="Twitter"></a></li>
+            <li class="footer__item-social"><a href="#"><img src="../assets/img/footer/linkedin.png" alt="LinkedIn"></a></li>
+            <li class="footer__item-social"><a href="#"><img src="../assets/img/footer/google-plus.png" alt="Google-Plus"></a></li>
+            <li class="footer__item-social"><a href="#"><img src="../assets/img/footer/behance.png" alt="Behance"></a></li>
+            <li class="footer__item-social"><a href="#"><img src="../assets/img/footer/pinterest.png" alt="Pinterest"></a></li>
+          </ul>
+        </div>
+        <!-- Красное лого -->
+        <div class="footer__logo">
+          <img src="../assets/img/footer/footer-logo.png" alt="Logo">
+        </div>
+        <!-- Красная полоска -->
+        <hr>
+        <!-- Копирайт -->
+        <div class="footer__copyright">© 2022 ATTACHE - Все права на интеллектуальную собственность защищены</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

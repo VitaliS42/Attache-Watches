@@ -1,0 +1,73 @@
+.shops {
+  &__block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+  }
+  &__img {
+    margin-bottom: 50px;
+  }
+  &__heading {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: .9;
+    text-transform: uppercase;
+    font-family: Acrom, sans-serif;
+    margin-bottom: 30px;
+  }
+  &__deco {
+    background-color: #ec001f;
+    border: none;
+    height: 3px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  &__divider {
+    width: 100%;
+  }
+  &__wrap {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  &__head {
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.4;
+    font-family: Acrom, sans-serif;
+    color: #ec001f;
+    font-size: 90%;
+  }
+  &__grid {
+    margin-top: 5px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px 3px;
+  }
+  &__item {
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.4;
+    font-family: Acrom, sans-serif;
+    color: #000000;
+    background-color: #f0f0f0;
+    font-size: 90%;
+  }
+  &__item a{
+    color: #000000;
+    text-decoration: none;
+  }
+}

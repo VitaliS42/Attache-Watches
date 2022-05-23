@@ -1,0 +1,49 @@
+.filters {
+  padding-top: 19px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  &__select {
+    width: 168px;
+    position: relative;
+    height: 29px;
+    font-family: Acrom;
+    font-size: 8.7px;
+    line-height: 1.2;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #414446;
+  }
+  &__select select {
+    outline: none;
+    height: 100%;
+    display: block;
+    width: 100%;
+    padding-left: 13px;
+    background: #f7f7f7;
+    border: 1px solid #dadada;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: Acrom;
+    font-size: 8.7px;
+    line-height: 1.2;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #414446;
+  }
+  &__select:after {
+    content: url(../img/header/arrow-down.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 8px 6px 8px;
+    border-left: 1px solid #dadada;
+    box-sizing: border-box;
+    background: #ffffff;
+    pointer-events: none;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+  }
+}

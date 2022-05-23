@@ -1,0 +1,209 @@
+.cart {
+  margin-bottom: 100px;
+  &__block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  &__head {
+    height: 49px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+  }
+  &__container {
+    box-sizing: border-box;
+  }
+  &__line {
+    display: flex;
+  }
+  &__bottom {
+    height: 49px;
+    border-bottom: 1px solid black;
+    display: flex;
+  }
+  &__firstCol {
+    width: 20%;
+    border-bottom: 1px solid #000;
+  }
+  &__secondCol {
+    width: 50%;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+  &__thirdCol {
+    width: 30%;
+    border-bottom: 1px solid #000;
+  }
+  &__borderless{
+    border-bottom: none;
+  }
+  &__cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: Acrom, sans-serif;
+    color: black;
+  }
+  &__link-decorated {
+    color: black;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  &__image {
+    display: block;
+    // height: 75%;
+    width: 75%;
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+  &__label {
+    width: 51%;
+  }
+  &__name {
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.4;
+    font-family: Acrom, sans-serif;
+  }
+  &__type {
+    color: #848383;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.4;
+    font-family: Acrom, sans-serif;
+    font-size: 12px;
+  }
+  &__size {
+    font-size: 120%;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.4;
+    font-family: Acrom, sans-serif;
+  }
+  &__number {
+    color: #848383;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.4;
+    font-family: Acrom, sans-serif;
+    font-size: 12px;
+  }
+  &__case {
+    color: #848383;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.4;
+    font-family: Acrom, sans-serif;
+    font-size: 12px;
+  }
+  &__price {
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.4;
+    font-family: Acrom, sans-serif;
+  }
+  &__label hr {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  &__quantity {
+    display: flex;
+    align-items: center;
+  }
+  &__amount {
+    color: #848383;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.4;
+    font-family: Acrom, sans-serif;
+    font-size: 12px;
+    margin-right: 20px;
+  }
+  &__input {
+    background-color: black;
+    color: #ffffff;
+    padding: 8px 10px;
+    width: 20px;
+  }
+  &__remove {
+    margin-left: 50px;
+    border: none;
+    background: none;
+    background-image: url(../img/cart/remove.png);
+    background-size: 100%;
+    height: 16px;
+    width: 16px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  &__checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+  }
+  &__sum {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-family: Acrom, sans-serif;
+  }
+  &__sum-amount {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: Acrom, sans-serif;
+    margin-bottom: 10px;
+  }
+  &__deco {
+    margin: 10px 0;
+    width: 100%;
+  }
+  &__sum-big {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 900;
+    line-height: 1.4;
+    font-family: Acrom, sans-serif;
+  }
+  &__sum-big-amount {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    font-family: Acrom, sans-serif;
+  }
+  &__button {
+    color: #fff;
+    border: 2px solid #000;
+    font-weight: 500;
+    padding: 15px 70px;
+    transition: .3s ease-in-out;
+    text-transform: uppercase;
+    font-size: 80%;
+    cursor: pointer;
+    background: #000;
+    line-height: 1.4;
+    font-family: Acrom, sans-serif;
+  }
+  &__button:hover {
+    color: black;
+    background-color: #ffffff;
+  }
+}

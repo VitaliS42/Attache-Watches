@@ -1,0 +1,97 @@
+.new-collection {
+  &__back {
+    background-image: url("../img/new-collection/red-back.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 988px;
+    background-size: 100%;
+    position: relative;
+    z-index: -1;
+  }
+  
+  &__bubbles {
+    margin-top: -1250px;
+    background-image: url("../img/new-collection/bubbles-long.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 1610px;
+    width: 100%;
+    position: absolute;
+    background-position: bottom center;
+    z-index: -1;
+  }
+  
+  &__watch {
+    margin-top: -988px;
+    background-image: url("../img/new-collection/watch.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 988px;
+    background-size: auto 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    z-index: 3;
+  }
+  
+  &__block {
+    margin: 0 auto;
+    background: #050505b9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 63px;
+    padding-bottom: 65px;
+    width: 1400px;
+  }
+  
+  & h1 {
+    font-family: Acrom;
+    font-size: 61.8px;
+    line-height: 1.2;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  & span {
+    font-family: Acrom;
+    font-size: 22.3px;
+    line-height: 1.2;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ff3333;
+  }
+  
+  &__button {
+    margin-top: 40px;
+    padding: 29px 64px 29px 62px;
+    font-family: Acrom;
+    font-size: 13.6px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+    background: none;
+  }
+  
+  &__button:hover {
+    cursor: pointer;
+    color: #000000;
+    background-color: #ffffff;
+  }
+}

@@ -1,0 +1,104 @@
+.departments {
+  &__button-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #e2e2e2;
+  }
+  &__button {
+    margin-top: 58px;
+    margin-bottom: 63px;
+    font-family: Acrom;
+    font-size: 13.6px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    color: #08090b;
+    border: 2px solid #000000;
+    background-color: #e2e2e2;
+    padding: 32px 117px;
+    transition: 1s;
+  }
+  &__button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  &__whitespace-block {
+    height: 174px;
+    position: relative;
+  }
+  &__whitespace {
+    height: 92px;
+    width: 100%;
+    border-top: 3px solid #000000;
+    position: absolute;
+    bottom: -25px;
+    background-color: #ffffff;
+  }
+  &__wrap {
+    padding-top: 58px;
+    padding-bottom: 73px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    position: relative;
+  }
+  &__link {
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+  }
+  &__link:first-child {
+    background: url(../img/mainWatch/mainWatch-accesories.png);
+    background-repeat: no-repeat;
+  }
+  &__link:last-child {
+    background: url(../img/mainWatch/mainWatch-buy.png);
+    background-repeat: no-repeat;
+  }
+  &__label {
+    height: 217px;
+    margin-top: 296px;
+    background-color: #0000007e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  &__heading {
+    padding-top: 50px;
+    font-family: Acrom;
+    font-size: 38.6px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__deco {
+    margin-top: 19px;
+    width: 201px;
+    height: 4px;
+    border: none;
+    background-color: #ffffff;
+  }
+  &__h3 {
+    padding-top: 20px;
+    font-family: Acrom;
+    font-size: 18.6px;
+    line-height: 1.2;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__text {
+    padding-top: 17px;
+    font-family: Acrom;
+    font-size: 14.9px;
+    line-height: 1.2;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}

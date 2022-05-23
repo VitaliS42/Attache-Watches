@@ -1,0 +1,175 @@
+.showWatch {
+  background: url(../img/watch-card/back-named.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -144px;
+  background-size: cover;
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 240px;
+    padding-bottom: 80px;
+  }
+  &__left {
+    padding-top: 92px;
+    display: flex;
+    flex-direction: column;
+    width: 346px;
+  }
+  &__heading {
+    font-family: Acrom;
+    font-size: 61.8px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 13px;
+  }
+  &__heading-small {
+    font-family: Acrom;
+    font-size: 25.9px;
+    line-height: 1.2;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    margin-bottom: 22px;
+  }
+  &__line {
+    border: none;
+    background-color: #ffffff;
+    height: 2px;
+  }
+  &__line-thin {
+    border: none;
+    background-color: #ffffff;
+    height: 1px;
+  }
+  &__text {
+    font-family: Acrom;
+    font-size: 18.6px;
+    line-height: 1.2;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 27px;
+    margin-bottom: 24px;
+  }
+  &__text-bold {
+    font-family: Acrom;
+    font-size: 18.6px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 26px;
+  }
+  &__minis {
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__mini {
+    border: 2px solid #ffffff;
+    height: 164px;
+    width: 164px;
+    box-sizing: border-box;
+    display: flex;
+  }
+  &__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__controls {
+    padding-top: 48px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__control {
+    display: flex;
+    align-items: center;
+    background: none;
+    font-family: Acrom;
+    font-size: 15.7px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+  }
+  &__right {
+    padding-top: 92px;
+    width: 323px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 51px;
+  }
+  &__cell {
+    font-family: Acrom;
+    font-size: 12.4px;
+    line-height: 29px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__price {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 35px 0 31px 0;
+  }
+  &__amount {
+    font-family: Acrom;
+    font-size: 30.3px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__currency {
+    font-family: Arial;
+    font-size: 29.7px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  &__button {
+    width: 100%;
+    text-align: center;
+    // padding: 28px 89px 30px 86px;
+    padding-top: 28px;
+    padding-bottom: 30px;
+    border: 2px solid #ffffff;
+    font-family: Acrom;
+    font-size: 13.6px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    color: #ffffff;
+    background: none;
+    margin-bottom: 17px;
+    transition: 1s;
+  }
+  &__button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+  }
+  &__links {
+    width: 65px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

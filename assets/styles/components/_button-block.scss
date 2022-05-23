@@ -1,0 +1,38 @@
+.button-block {
+  display: flex;
+  justify-content: center;
+  &__button {
+    font-family: Acrom;
+    font-size: 13.6px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    color: #08090b;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    padding: 28px 67px 30px 64px;
+    transition: 1s;
+  }
+  &__button:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  &__button-negative {
+    font-family: Acrom;
+    font-size: 13.6px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background-color: #000000;
+    padding: 28px 67px 30px 64px;
+    transition: 1s;
+  }
+  &__button-negative:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
