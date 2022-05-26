@@ -31,11 +31,11 @@
   }
   @media (max-width:767px) {
     &__list {
-      flex-direction: column;
-      justify-content: space-between;
+      padding-top: 5px;
+      padding-bottom: 4px;
     }
-    &__link-bold {
-      line-height: 1.31;
-    }
+  }
+  @media (max-width:425px) {
+    display: none;
   }
 }

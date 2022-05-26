@@ -102,26 +102,31 @@
   &__language:hover {
     background-color: #535353;
   } 
-  @media (max-width: 1640px) {
+  @media (max-width: 1120px) {
     &__flex {
       height: auto;
       flex-wrap: wrap;
+      padding: 9px 0 19px 0;
+    }
+    &__left img {
+      height: 40px;
     }
     &__center {
-      padding-top: 40px;
+      padding-top: 15px;
       width: 100%;
       order: 3;
       justify-self: center;
       display: flex;
       justify-content: center;
     }
-  }
-  @media (max-width:840px) {
-    &__left img {
-      height: 40px;
+    &__link-marker {
+      margin-top: 7px;
     }
   }
   @media (max-width:590px) {
+    &__flex {
+      padding: 9px 0 9px 0;
+    }
     &__top {
       width: 100%;
     }

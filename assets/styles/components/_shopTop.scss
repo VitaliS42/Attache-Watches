@@ -21,7 +21,7 @@
   }
   &__deco {
     margin-top: 20px;
-    width: 708px;
+    width: 50%;
     height: 1px;
     border: none;
     background: #ffffff;
@@ -30,5 +30,30 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-bottom: 124px;
+  }
+  @media (max-width:1120px) {
+    margin-top: -193px;
+  }
+  &__name {
+    padding-top: 220px;
+  }
+  @media (max-width:768px) {
+    &__grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding-bottom: 54px;
+    }
+  }
+  @media (max-width:570px) {
+    &__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    &__heading {
+      font-size: 30.9px;
+    }
+  }
+  @media (max-width:425px) {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
   }
 }
