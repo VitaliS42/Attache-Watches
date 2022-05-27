@@ -60,10 +60,16 @@
     &__slide {
       grid-template-columns: 1fr 1fr;
     }
+    &__button {
+      padding: 28px 47px 30px 44px;
+    }
   }
   @media (max-width:425px) {
     &__slide {
       grid-template-columns: 1fr;
+    }
+    &__button {
+      padding: 28px 17px 30px 14px;
     }
   }
 }
