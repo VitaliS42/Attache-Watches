@@ -4,11 +4,10 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 988px;
-    background-size: 100%;
+    background-size: auto;
     position: relative;
     z-index: -1;
   }
-  
   &__bubbles {
     margin-top: -1250px;
     background-image: url("../img/new-collection/bubbles-long.png");
@@ -20,7 +19,6 @@
     background-position: bottom center;
     z-index: -1;
   }
-  
   &__watch {
     margin-top: -988px;
     background-image: url("../img/new-collection/watch.png");
@@ -35,7 +33,6 @@
     position: relative;
     z-index: 3;
   }
-  
   &__block {
     margin: 0 auto;
     background: #050505b9;
@@ -53,7 +50,6 @@
     padding-bottom: 65px;
     width: 1400px;
   }
-  
   & h1 {
     font-family: Acrom;
     font-size: 61.8px;
@@ -62,7 +58,6 @@
     text-transform: uppercase;
     color: #ffffff;
   }
-  
   & span {
     font-family: Acrom;
     font-size: 22.3px;
@@ -72,7 +67,6 @@
     letter-spacing: 0.2em;
     color: #ff3333;
   }
-  
   &__button {
     margin-top: 40px;
     padding: 29px 64px 29px 62px;
@@ -88,10 +82,63 @@
             transition-duration: 1s;
     background: none;
   }
-  
   &__button:hover {
     cursor: pointer;
     color: #000000;
     background-color: #ffffff;
+  }
+  @media (max-width:1600px) {
+    &__block {
+      width: 100%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    &__watch {
+      margin-top: -988px;
+      height: 988px;
+      background-size: 100% auto ;
+    }
+  }
+  @media (max-width:1300px) {
+    &__watch {
+      margin-top: -1005px;
+      height: 850px;
+      background-size: 100% auto;
+    }
+  }
+  @media (max-width:1024px) {
+    &__back {
+      height: 815px;
+    }
+    &__watch {
+      margin-top: -915px;
+      height: 850px;
+      background-size: 100% auto;
+    }
+  }
+  @media (max-width:765px) {
+    &__back {
+      height: 700px;
+    }
+    &__watch {
+      margin-top: -752px;
+      height: 585px;
+    }
+    & h1 {
+      font-size: 30.8px;
+    }
+    & span {
+      font-size: 22.3px;
+    }
+    &__button {
+      margin-top: 10px;
+      padding: 12px 44px 12px 42px;
+    }
+  }
+  @media (max-width:425px) {
+    &__watch {
+      margin-top: -802px;
+      height: 475px;
+    }
   }
 }

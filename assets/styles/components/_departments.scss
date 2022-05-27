@@ -47,16 +47,20 @@
   }
   &__link {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: flex-end;
     text-decoration: none;
+    background-repeat: no-repeat;
+    background-position:center;
   }
   &__link:first-child {
     background: url(../img/mainWatch/mainWatch-accesories.png);
-    background-repeat: no-repeat;
+    // background-size: 100% auto;
   }
   &__link:last-child {
     background: url(../img/mainWatch/mainWatch-buy.png);
-    background-repeat: no-repeat;
+    // background-size: 100% auto;
   }
   &__label {
     height: 217px;
@@ -100,5 +104,67 @@
     font-weight: 500;
     text-transform: uppercase;
     color: #ffffff;
+    text-align: center;
+  }
+
+  @media (max-width:1350px) {
+    &__link:first-child {
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+    }
+    &__link:last-child {
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+    }
+    &__label {
+      height: 200px;
+      margin-top: 200px;
+    }
+  }
+
+  @media (max-width:1200px) {
+    &__label {
+      height: 200px;
+      margin-top: 150px;
+    }
+  }
+  @media (max-width:1000px) {
+    &__label {
+      height: 150px;
+      margin-top: 100px;
+    }
+    &__heading {
+      padding-top: 25px;
+    }
+  }
+
+  @media (max-width:768px) {
+    &__label {
+      height: 400px;
+      margin-top: 0;
+      justify-content: center;
+    }
+    &__button {
+      margin-top: 38px;
+      margin-bottom: 43px;
+      padding: 20px 50px;
+    }
+    &__wrap {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      position: relative;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+  @media (max-width:600px) {
+    &__label {
+      height: 250px;
+    }
+  }
+  @media (max-width:400px) {
+    &__label {
+      height: 200px;
+    }
   }
 }

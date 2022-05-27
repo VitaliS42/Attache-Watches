@@ -1,10 +1,12 @@
 .brand {
   &__top {
+    height: 854px;
     margin-top: -144px;
-    background: url(../img/brand/top-back.png);
+    background-image: url(../img/brand/top-back.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: black;
   }
   &__heading {
     font-family: Acrom;
@@ -16,5 +18,39 @@
     text-align: center;
     padding-top: 450px;
     padding-bottom: 330px;
+  }
+  @media (max-width:1120px) {
+    &__top {
+      margin-top: -195px;
+    }
+  }
+  @media (max-width:1024px) {
+    &__top {
+      height: 600px;
+      margin-top: -195px;
+    }
+    &__heading {
+      font-size: 6vw;
+      padding-top: 310px;
+    }
+  }
+  @media (max-width:768px) {
+    &__heading {
+      padding-top: 313px;
+    }
+  }
+  @media (max-width:590px) {
+    &__top {
+      height: 600px;
+      margin-top: -145px;
+    }
+    &__heading {
+      padding-top: 326px;
+    }
+  }
+  @media (max-width:370px) {
+    &__heading {
+      padding-top: 330px;
+    }
   }
 }
