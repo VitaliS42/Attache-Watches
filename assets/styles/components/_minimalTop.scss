@@ -43,5 +43,24 @@
     &__container {
       height: 50px;
     }
+    &__heading-mini {
+      font-size: 3vw;
+      text-align: center;
+    }
+  }
+  @media (max-width:425px) {
+    &__name {
+      padding-top: 25px;
+      padding-bottom: 10px;
+    }
+    &__heading-mini {
+      margin-top: 10px;
+    }
+    &__deco {
+      margin-top: 10px;
+    }
+    &__container {
+      height: 20px;
+    }
   }
 }

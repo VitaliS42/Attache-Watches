@@ -13,7 +13,8 @@
     border-bottom: 2px solid #ec001f;
   }
   &__img {
-    width: 30%;
+    width: 77px;
+    height: 285px;
   }
   &__name {
     font-size: 18px;
@@ -56,5 +57,12 @@
     cursor: pointer;
     color: #ffffff;
     background-color: #000;
+  }
+
+  @media (max-width:500px) {
+    &__img {
+    width: 54px;
+    height: 222px;
+    }
   }
 }
