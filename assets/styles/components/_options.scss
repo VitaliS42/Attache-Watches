@@ -9,6 +9,9 @@
   }
   &__item {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &__img {
     width: 100%;
@@ -39,6 +42,7 @@
     color: #000000;
   }
   &__text {
+    display: inline-block;
     margin-top: 10px;
     font-family: Acrom;
     line-height: 22px;
@@ -73,4 +77,84 @@
     width: 100%;
     background-color: #ffffff;
   }
+  @media (max-width:1300px) {
+    &__button {
+      margin-top: 15px;
+      width: 250px;
+      height: 45px;
+    }
+    &__text {
+      height: 50px;
+    }
+  }
+  @media (max-width:1120px) {
+    &__button {
+      margin-top: 5px;
+      width: 250px;
+      height: 45px;
+    }
+    &__heading {
+      font-size: 20.7px;
+    }
+  }
+  @media (max-width:1024px) {
+    &__text-block {
+      padding: 7px 36px 0 36px;
+      
+    }
+    &__heading {
+      font-size: 18.7px;
+    }
+    &__text {
+      font-size: 12.9px;
+      line-height: 15px;
+      margin-top: 5px;
+      height: 30px;
+    }
+    &__button {
+      margin-top: 5px;
+      width: 200px;
+      height: 45px;
+    }
+  }
+  @media (max-width:760px) {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+    &__text-block {
+      padding: 32px 36px 17px 36px;
+    }
+    &__heading {
+      font-size: 24.7px;
+    }
+    &__text {
+      margin-top: 10px;
+      font-size: 14.9px;
+    }
+    &__button {
+      margin-top: 36px;
+      width: 300px;
+      height: 75px;
+      font-size: 13.6px;
+    }
+  }
+  @media (max-width:425px) {
+    &__text-block {
+      padding: 15px 36px 7px 36px;
+    }
+    &__heading {
+      font-size: 24.7px;
+    }
+    &__text {
+      margin-top: 10px;
+      font-size: 14.9px;
+    }
+    &__button {
+      margin-top: 10px;
+      width: 250px;
+      height: 55px;
+      font-size: 13.6px;
+    }
+  }
+  
 }

@@ -78,4 +78,16 @@
     font-size: 14px;
     line-height: 1.4;
   }
+
+  @media (max-width:425px) {
+    &__id {
+      font-size: 100%;
+    }
+    &__money {
+      font-size: 110%;
+    }
+    &__status {
+      font-size: 100%;
+    }
+  }
 }

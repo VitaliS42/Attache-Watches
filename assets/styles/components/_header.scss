@@ -1,7 +1,6 @@
 .header {
   background: #000000ce;
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 5;
   width: 100%;
   & a {
@@ -58,6 +57,14 @@
   &__button {
     margin-left: 32px;
   }
+  &__amount {
+    position: absolute;
+    color: #fff;
+    margin: 1px 0 0 6px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: Acrom, sans-serif;
+  }
   &__details-block {
     margin-right: 59px;
   }
@@ -112,7 +119,7 @@
       height: 40px;
     }
     &__center {
-      padding-top: 15px;
+      padding-top: 40px;
       width: 100%;
       order: 3;
       justify-self: center;
