@@ -1,7 +1,6 @@
 .header {
   background: #000000ce;
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 5;
   width: 100%;
   & a {
@@ -58,6 +57,14 @@
   &__button {
     margin-left: 32px;
   }
+  &__amount {
+    position: absolute;
+    color: #fff;
+    margin: 1px 0 0 6px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: Acrom, sans-serif;
+  }
   &__details-block {
     margin-right: 59px;
   }
@@ -102,10 +109,14 @@
   &__language:hover {
     background-color: #535353;
   } 
-  @media (max-width: 1640px) {
+  @media (max-width: 1120px) {
     &__flex {
       height: auto;
       flex-wrap: wrap;
+      padding: 9px 0 19px 0;
+    }
+    &__left img {
+      height: 40px;
     }
     &__center {
       padding-top: 40px;
@@ -115,13 +126,14 @@
       display: flex;
       justify-content: center;
     }
-  }
-  @media (max-width:840px) {
-    &__left img {
-      height: 40px;
+    &__link-marker {
+      margin-top: 7px;
     }
   }
   @media (max-width:590px) {
+    &__flex {
+      padding: 9px 0 9px 0;
+    }
     &__top {
       width: 100%;
     }

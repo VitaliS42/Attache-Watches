@@ -26,4 +26,19 @@
   &__button:hover {
     background-color: #ff0022;
   }
+  @media (max-width:1120px) {
+    &__button {
+      padding: 10px 66px 11px 63px;
+    }
+  }
+  @media (max-width:768px) {
+    &__button {
+      padding: 10px 33px 11px 31px;
+    }
+  }
+  @media (max-width:768px) {
+    &__button {
+      padding: 7px;
+    }
+  }
 }
