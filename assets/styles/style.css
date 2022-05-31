@@ -4032,9 +4032,48 @@ ul {
   .cart__bottom {
     display: none;
   }
+  .cart__line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 15px;
+  }
+  .cart__firstCol {
+    width: 90%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: none;
+  }
+  .cart__image {
+    width: 40%;
+    padding-top: 18px;
+    padding-bottom: 0;
+  }
+  .cart__secondCol {
+    width: 90%;
+    border-right: 1px solid black;
+  }
+  .cart__thirdCol {
+    display: none;
+  }
+  .cart__quantity {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .cart__remove {
+    margin-left: 10px;
+  }
 }
 
-.order {
+.mod-order {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.452);
   top: 0;
@@ -4053,7 +4092,7 @@ ul {
   outline: none;
 }
 
-.order__block {
+.mod-order__block {
   position: relative;
   background-color: white;
   width: 600px;
@@ -4061,7 +4100,7 @@ ul {
   padding: 30px 60px 0;
 }
 
-.order__close {
+.mod-order__close {
   position: absolute;
   top: 40px;
   right: 60px;
@@ -4069,7 +4108,7 @@ ul {
   cursor: pointer;
 }
 
-.order__heading {
+.mod-order__heading {
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4087,12 +4126,12 @@ ul {
   font-family: Acrom, sans-serif;
 }
 
-.order__text {
+.mod-order__text {
   padding: 0 20px;
   text-transform: uppercase;
 }
 
-.order__form-block {
+.mod-order__form-block {
   margin: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4103,7 +4142,7 @@ ul {
           flex-direction: column;
 }
 
-.order__input {
+.mod-order__input {
   display: block;
   padding: 15px 0 15px 5px;
   border: none;
@@ -4115,13 +4154,13 @@ ul {
   outline: none;
 }
 
-.order__textArea {
+.mod-order__textArea {
   resize: none;
   height: 100px;
   font: 14px/1.4 'Acrom',sans-serif;
 }
 
-.order__button {
+.mod-order__button {
   padding: 15px 50px;
   font-weight: 600;
   border: 2px solid #000;
@@ -4135,7 +4174,7 @@ ul {
   font: 14px/1.4 'Acrom',sans-serif;
 }
 
-.order__button:hover {
+.mod-order__button:hover {
   cursor: pointer;
   background: #fff;
   color: #000;
