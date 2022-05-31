@@ -7,6 +7,7 @@
   &__flex {
     display: flex;
     justify-content: space-between;
+    
     padding-top: 240px;
     padding-bottom: 80px;
   }
@@ -14,7 +15,7 @@
     padding-top: 92px;
     display: flex;
     flex-direction: column;
-    width: 346px;
+    max-width: 346px;
   }
   &__heading {
     font-family: Acrom;
@@ -76,10 +77,17 @@
     box-sizing: border-box;
     display: flex;
   }
+  &__mini:first-child {
+    margin-right: 15px;
+  }
   &__center {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 30px;
+  }
+  &__center img{
+    width: 100%;
   }
   &__controls {
     padding-top: 48px;
@@ -103,9 +111,6 @@
   &__right {
     padding-top: 92px;
     width: 323px;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
   }
   &__grid {
     display: grid;
@@ -171,5 +176,79 @@
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (max-width:1180px) {
+    background: url(../img/watch-card/back-clear.png);
+    background-size: 100% 100%;
+    &__flex {
+      align-items: center;
+    }
+    &__left {
+      padding-top: 0;
+      padding-bottom: 180px;
+    }
+    &__right {
+      padding-top: 0;
+    }
+  }
+  @media (max-width:1120px) {
+    margin-top: -160px;
+  }
+  @media (max-width:1020px) {
+    &__flex {
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+    &__left {
+      padding-bottom: 50px;
+    }
+    &__center {
+      margin: 0;
+      width: 385px;
+    }
+    &__center img{
+      width: 70%;
+    }
+    &__right {
+      width: 100%;
+    }
+    &__grid {
+      width: 47%;
+    }
+  }
+  @media (max-width:767px) {
+    &__flex {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 180px;
+    }
+    &__left {
+      padding-bottom: 0;
+    }
+    &__center {
+      padding-top: 50px;
+      width: 100%;
+    }
+    &__right {
+      width: 323px;
+      padding-top: 50px;
+    }
+    &__grid {
+      width: 100%;
+    }
+  }
+  @media (max-width:375px) {
+    &__mini {
+      height: 130px;
+      width: 130px;
+    } 
+    &__right {
+      padding-top: 50px;
+      width: 290px;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+    }
   }
 }

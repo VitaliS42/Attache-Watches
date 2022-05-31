@@ -3,6 +3,9 @@
   padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  box-sizing: border-box;
   &__select {
     width: 168px;
     position: relative;
@@ -45,5 +48,30 @@
     position: absolute;
     top: 2px;
     right: 2px;
+  }
+  @media (max-width:1380px) {
+    justify-content: flex-start;
+    &__select {
+      margin-bottom: 10px;
+      margin-left: 10px;
+    }
+  }
+  @media (max-width:390px) {
+    justify-content: flex-start;
+    &__select {
+      margin-left: 5px;
+    }
+    &__select {
+      width: 160px;
+    }
+  }
+  @media (max-width:360px) {
+    justify-content: center;
+    &__select {
+      margin-left: 0;
+    }
+    &__select {
+      width: 190px;
+    }
   }
 }
