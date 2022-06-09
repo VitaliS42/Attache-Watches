@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attache</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Хедер -->
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__flex">
+
+          <div class="header__left">
+            <a href="components/index.html">
+              <img src="assets/img/header/header-logo.png" alt="Logo">
+            </a>
+          </div>
+
+          <div class="header__center">
+            <ul class="header__list">
+              <!-- <li class="header__item">
+                <a class="header__link" href="#">Часы
+                
+                </a>
+              </li> -->
+              <li class="header__item">
+                <details class="header__watch-details">
+                  <summary>
+                    <a class="header__details-link" href="components/collection-main.html">Часы
+                      
+                    </a>
+                  </summary>
+                  <div class="header__watch-details-content">
+                    <a class="header__language" href="components/collection-pilot.html">Frigate</a>
+                    <a class="header__language" href="components/collection-pilot.html">Marine</a>
+                    <a class="header__language" href="components/collection-pilot.html">Megapolis</a>
+                    <a class="header__language" href="components/collection-pilot.html">Sky traffic</a>
+                    <a class="header__language" href="components/collection-pilot.html">Sky traffic II</a>
+                    <a class="header__language" href="components/collection-pilot.html">Specialliner</a>
+                  </div>
+                </details>
+                <!-- <div class="header__redline-special"></div> -->
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="components/accesories.html">Аксессуары
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="components/brand.html">Бренд
+                  
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="components/shops.html">Где купить
+                  
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="components/oopsie.html">Паспорт</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header__right">
+            <ul class="header__list">
+              <li class="header__button header__details-block"><details class="header__details">
+                <summary>ENG </summary>
+                <div class="header__details-content">
+                  <a class="header__language" href="#">English</a>
+                  <a class="header__language" href="#">Russian</a>
+                </div>
+              </details></li>
+              <li class="header__button"><a href="components/profile.html"><img src="assets/img/header/profile.svg" alt="User"></a></li>
+              <li class="header__button"><a href="components/cart.html"><img src="assets/img/header/shopping-bag.svg" alt="Shopping Cart"><div class="header__amount">3</div></a></li>
+              <li class="header__button"><a href="components/oopsie.html"><img src="assets/img/header/email.svg" alt="Mail"></a></li>
+              <li class="header__button"><a href="components/oopsie.html"><img src="assets/img/header/search.svg" alt="Search"></a></li>
+            </ul>
+          </div>
+
+          <div class="mobile-menu__burger">
+            <button class="mobile-menu__icon"><img class="mobile-menu__icon" src="assets/img/header/burger.svg" alt="Icon"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-menu">
+      <div class="mobile-menu__top">
+        <a href="components/index.html">
+          <img class="mobile-menu__logo" src="assets/img/header/header-logo.png" alt="Logo">
+        </a>
+        <button class="mobile-menu__close"><img src="assets/img/header/close.png" alt="Icon"></button>
+      </div>
+      
+      <div class="mobile-menu__container">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="components/collection-main.html">Часы</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="components/accesories.html">Аксессуары</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="components/brand.html">Бренд</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="components/shops.html">Где купить</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="components/oopsie.html">Паспорт</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__links">
+          <li class="mobile-menu__button"><a href="components/profile.html"><img class="mobile-menu__icons" src="assets/img/header/profile.svg" alt="User"></a></li>
+          <li class="mobile-menu__button"><a href="components/cart.html"><img class="mobile-menu__icons" src="assets/img/header/shopping-bag.svg" alt="Shopping Cart"></a></li>
+          <li class="mobile-menu__button"><a href="components/oopsie.html"><img class="mobile-menu__icons" src="assets/img/header/email.svg" alt="Mail"></a></li>
+          <li class="mobile-menu__button"><a href="components/oopsie.html"><img class="mobile-menu__icons" src="assets/img/header/search.svg" alt="Search"></a></li>
+        </ul>
+      </div>
+      <details class="mobile-menu__details">
+        <summary>ENG </summary>
+        <div class="mobile-menu__details-content">
+          <a class="mobile-menu__language" href="#">English</a>
+          <a class="mobile-menu__language" href="#">Russian</a>
+        </div>
+      </details>
+    </div>
+
+  </header>
+
+  <!-- Основной баннер -->
+  <!-- <section class="top">
+    <div class="top__slide">
+      <div class="container top__flex">
+          <div class="top__left">
+            <img src="../assets/img/top/pilot-logo.png" alt="Pilot Logo">
+            <hr class="top__hr">
+            <h1 class="top__heading">Pilot</h1>
+            <span class="top__text">Automatic</span>
+            <button class="top__button">Посмотреть эти часы</button>
+          </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="top">
+    <div class="top__slide">
+      <div class="top__img-container">
+        <img class="top__img" src="assets/img/top/slide-back2.png" alt="">
+        <!-- <img class="top__img" src="../assets/img/top/111.jpg" alt=""> -->
+        <!-- <img class="top__img" src="../assets/img/top/222.jpg" alt=""> -->
+      </div>
+      <div class="container top__flex">
+        <div class="top__left">
+          <img src="assets/img/top/pilot-logo.png" alt="Pilot Logo">
+          <hr class="top__hr">
+          <h1 class="top__heading">Pilot</h1>
+          <span class="top__text">Automatic</span>
+          <button class="top__button">Посмотреть эти часы</button>
+        </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Витрина -->
+  <section class="showcase showcase__colored">
+    <div class="container">
+      <div class="showcase__block">
+        <div class="showcase__head">
+          <h2>Часы</h2>
+          <hr class="showcase__decor">
+        </div>
+        <div class="showcase__slider">
+          <div class="showcase__slide">
+            <a class="clock__link" href="components/watch-card.html">
+              <div class="clock">
+                <img class="clock__img" src="assets/img/clock/watch-1.png" alt="Watch">
+                <h2 class="clock__head">Pilot</h2>
+                <span class="clock__name">chronograph</span>
+                <hr class="clock__deco">
+                <span class="clock__art">AРТ 2420.350.1</span>
+                <div class="clock__price">
+                  <span class="clock__amount">30 000</span>
+                  <span class="clock__currency">₽</span>
+                </div>
+                <hr class="clock__redline">
+              </div>
+            </a>
+            
+            <a class="clock__link" href="components/watch-card.html">
+              <div class="clock">
+                <img class="clock__img" src="assets/img/clock/watch-2.png" alt="Watch">
+                <h2 class="clock__head">Pilot</h2>
+                <span class="clock__name">AUTOMATIC</span>
+                <hr class="clock__deco">
+                <span class="clock__art">AРТ 2420.350.1</span>
+                <div class="clock__price">
+                  <span class="clock__amount">25 000</span>
+                  <span class="clock__currency">₽</span>
+                </div>
+                <hr class="clock__redline">
+              </div>
+            </a>
+            <a class="clock__link" href="components/watch-card.html">
+              <div class="clock">
+                <img class="clock__img" src="assets/img/clock/watch-3.png" alt="Watch">
+                <h2 class="clock__head">Pilot</h2>
+                <span class="clock__name">24 Hour</span>
+                <hr class="clock__deco">
+                <span class="clock__art">AРТ 2420.350.1</span>
+                <div class="clock__price">
+                  <span class="clock__amount">20 000</span>
+                  <span class="clock__currency">₽</span>
+                </div>
+                <hr class="clock__redline">
+              </div>
+            </a>
+            <a class="clock__link" href="components/watch-card.html">
+              <div class="clock">
+                <img class="clock__img" src="assets/img/clock/watch-4.png" alt="Watch">
+                <h2 class="clock__head">Pilot</h2>
+                <span class="clock__name">AUTOMATIC</span>
+                <hr class="clock__deco">
+                <span class="clock__art">AРТ 2420.350.1</span>
+                <div class="clock__price">
+                  <span class="clock__amount">25 000</span>
+                  <span class="clock__currency">₽</span>
+                </div>
+                <hr class="clock__redline">
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="showcase__button-wrapper">
+          <button class="showcase__button">Посмотреть все часы</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Новая коллекция -->
+  <section class="new-collection">
+    <div class="new-collection__back"></div>
+
+    <div class="new-collection__bubbles rellax" data-rellax-speed="7"></div>
+
+    <div class="new-collection__watch">
+      <div class="new-collection__block">
+        <h1>Deep Sea</h1>
+        <span>COLLECTION</span>
+        <button class="new-collection__button">ПОСМОТРЕТЬ ПРЕМЬЕРУ</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Блок различных действий -->
+  <section class="options">
+    <div class="container">
+      <div class="options__grid">
+        <div class="options__item">
+          <img class="options__img" src="assets/img/options/buy-watch.png" alt="Buy watch">
+          <div class="options__label">
+            <div class="options__text-block">
+              <h2 class="options__heading">Купить Часы</h2>
+              <p class="options__text">Сейчас на сайте</p>
+              <button class="options__button">Посетить магазин</button>
+            </div>
+            <div class="options__whitespace"></div>
+          </div>
+        </div>
+        <div class="options__item">
+          <img class="options__img" src="assets/img/options/find-shops.png" alt="Shops">
+          <div class="options__label">
+            <div class="options__text-block">
+              <h2 class="options__heading">Где купить</h2>
+              <p class="options__text">Найти ближайший магазин</p>
+              <button class="options__button">Найти магазин</button>
+            </div>
+            <div class="options__whitespace"></div>
+          </div>
+        </div>
+        <div class="options__item">
+          <img class="options__img" src="assets/img/options/become-partner.png" alt="Become a partner">
+          <div class="options__label">
+            <div class="options__text-block">
+              <h2 class="options__heading">Дистрибьютор</h2>
+              <p class="options__text">Стать официальным партнером</p>
+              <button class="options__button">Наши контакты</button>
+            </div>
+            <div class="options__whitespace"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Гарантия -->
+  <section class="warranty">
+    <div class="warranty__container">
+      <div class="warranty__flex">
+        <h2>ГАРАНТИЯ И СЕРВИС</h2>
+        <hr>
+        <p class="warranty__p-bright">Узнайте больше о гарантийном и постгарантийном обслуживании,</p>
+        <p class="warranty__p-dark">узнать о точках сервисного обслуживания</p>
+        <button class="warranty__button">УЗНАТЬ ПОДРОБНЕЕ</button>
+        <div class="warranty__wrap">
+          <a class="warranty__link" href="mailto:service@attache.ru"><img src="assets/img/warranty/mail.svg" alt="Mail">&nbsp;<span>service@attache.ru</span></a>
+          <a class="warranty__link" href="tel:+74956402502"><img src="assets/img/warranty/phone.svg" alt="Phone">&nbsp;<span>+7(495) 640-25-02</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Новости -->
+  <section class="news">
+    <div class="container">
+      <div class="news__block">
+        <h2 class="news__heading">НОВОСТИ</h2>
+        <hr class="news__line">
+        <div class="news__flex">
+          <div class="news__item">
+            <img class="news__img" src="assets/img/news/news-1.png" alt="Opening">
+            <h2 class="news__title">ОТКРЫТИЕ ОФИЦИАЛЬНОГО САЙТА</h2>
+            <p class="news__text">Открытие нового официального сайта ATTACHEWATCHES
+              20.10.2021 новый фирменный бутик, где Вы сможете
+              подобрать для себя любые часы из коллекций ATTACHE...</p>
+            <a class="news__link" href="#">Узнать подробнее
+              <hr class="news__redline">
+            </a>
+          </div>
+          <div class="news__item">
+            <img class="news__img" src="assets/img/news/news-2.png" alt="New collection">
+            <h2 class="news__title">ATTACHE COLLECTIONS</h2>
+            <p class="news__text">Мы запускаем линейку ATTACHE 
+              Ляляля тут должен быть правильный текс, несущий
+              достоверную информацию и все такое</p>
+            <a class="news__link" href="#">Узнать подробнее
+              <hr class="news__redline">
+            </a>
+          </div>
+        </div>
+        <div class="news__bottom"></div>
+      </div>
+      
+    </div> 
+  </section>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__flex">
+        <!-- Текстовые ссылки -->
+        <div class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="components/oopsie.html">Новости</a></li>
+            <li class="footer__item"><a class="footer__link" href="components/oopsie.html">Вакансии</a></li>
+            <li class="footer__item"><a class="footer__link" href="components/shops.html">Магазины в россии и мире</a></li>
+            <li class="footer__item"><a class="footer__link" href="components/distributers.html">Дистрибьютер - стать официальным партнером</a></li>
+            <li class="footer__item"><a class="footer__link" href="components/service.html">Гарантия и сервис</a></li>
+            <li class="footer__item"><a class="footer__link" href="components/oopsie.html">Контакты</a></li>
+          </ul>
+        </div>
+        <!-- Ссылки на соцсети -->
+        <div class="footer__social">
+          <ul class="footer__list-social">
+            <li class="footer__item-social"><a href="#"><img src="assets/img/footer/VK-white.png" alt="VK"></a></li>
+            <li class="footer__item-social"><a href="#"><img src="assets/img/footer/facebook.png" alt="Facebook"></a></li>
+            <li class="footer__item-social"><a href="#"><img src="assets/img/footer/youtube.png" alt="Youtube"></a></li>
+            <li class="footer__item-social"><a href="#"><img src="assets/img/footer/twitter.png" alt="Twitter"></a></li>
+            <li class="footer__item-social"><a href="#"><img src="assets/img/footer/linkedin.png" alt="LinkedIn"></a></li>
+            <li class="footer__item-social"><a href="#"><img src="assets/img/footer/google-plus.png" alt="Google-Plus"></a></li>
+            <li class="footer__item-social"><a href="#"><img src="assets/img/footer/behance.png" alt="Behance"></a></li>
+            <li class="footer__item-social"><a href="#"><img src="assets/img/footer/pinterest.png" alt="Pinterest"></a></li>
+          </ul>
+        </div>
+        <!-- Красное лого -->
+        <div class="footer__logo">
+          <img src="assets/img/footer/footer-logo.png" alt="Logo">
+        </div>
+        <!-- Красная полоска -->
+        <hr>
+        <!-- Копирайт -->
+        <div class="footer__copyright">© 2022 ATTACHE - Все права на интеллектуальную собственность защищены</div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/scripts/mobile-menu.js"></script>
+  <script src="assets/scripts/rellax.min.js"></script>
+  <script>
+    var rellax = new Rellax(".rellax", {
+      center: true,
+      speed: -2,
+      round: true,
+      vertical: true,
+      horizontal: false,
+    });
+  </script>
+</body>
+</html>
