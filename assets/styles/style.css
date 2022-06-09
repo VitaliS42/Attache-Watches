@@ -141,6 +141,51 @@ ul {
   border: none;
 }
 
+.header__watch-details summary {
+  list-style: none;
+  font-family: Acrom;
+  font-size: 11.2px;
+  line-height: 2.5;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  color: #ffffff;
+  position: relative;
+}
+
+.header__watch-details summary::after {
+  content: url(../img/header/arrow-down.svg);
+}
+
+.header__watch-details-content {
+  position: absolute;
+  top: 85px;
+  background: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #ffffff;
+}
+
+.header__details-link {
+  font-family: Acrom;
+  position: relative;
+  font-size: 11.2px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+}
+
+.header__redline-special {
+  position: absolute;
+  bottom: 31px;
+  width: 27px;
+  height: 3px;
+  margin-left: 20px;
+  background-color: #ff001e;
+}
+
 .header__link {
   padding-top: 22px;
   font-family: Acrom;
@@ -265,6 +310,9 @@ ul {
   }
   .header__link-marker {
     margin-top: 7px;
+  }
+  .header__redline-special {
+    bottom: 7px;
   }
 }
 
@@ -630,15 +678,23 @@ ul {
 }
 
 .top__slide {
-  background-image: url(../img/top/slide-back2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  position: relative;
   margin-top: -120px;
 }
 
-.top__flex {
+.top__img-container {
+  width: 100%;
   height: 100%;
+  position: absolute;
+  z-index: -1;
+  margin: 0  auto;
+}
+
+.top__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .top__left {
@@ -711,44 +767,30 @@ ul {
   background: #ffffff;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1280px) {
+  .top__img-container {
+    margin: 0 0 0 0;
+    width: 100%;
+  }
   .top__left {
-    margin-left: 100px;
     padding-top: 160px;
     padding-bottom: 150px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
   .top__left {
-    margin-left: 20px;
-    padding-top: 160px;
-    padding-bottom: 100px;
-  }
-  .top__left img {
-    width: 50%;
-  }
-  .top__hr {
-    margin-top: 20px;
-  }
-  .top__heading {
-    margin-top: 0;
-    font-size: 61.8px;
-  }
-  .top__text {
-    margin-top: 0;
-    font-size: 22.3px;
-  }
-  .top__button {
-    padding: 20px 67px 20px 63px;
-    margin-top: 10px;
-    font-size: 13.6px;
+    padding-top: 135px;
+    padding-bottom: 85px;
   }
 }
 
 @media (max-width: 768px) {
-  .top__slide {
-    background-position: right center;
+  .top__img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 100% 30%;
+       object-position: 100% 30%;
   }
   .top__flex {
     display: -webkit-box;
@@ -785,18 +827,32 @@ ul {
   }
 }
 
-@media (max-width: 560px) {
-  .top__slide {
-    background-position: right 10% center;
+@media (max-width: 600px) {
+  .top__img {
+    -o-object-position: 85% 30%;
+       object-position: 85% 30%;
   }
 }
 
 @media (max-width: 425px) {
-  .top__slide {
-    background-position: right 22% center;
+  .top__img {
+    -o-object-position: 80% 30%;
+       object-position: 80% 30%;
   }
   .top__left {
     padding-top: 300px;
+  }
+  .top__button {
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 13.6px;
+  }
+}
+
+@media (max-width: 320px) {
+  .top__img {
+    -o-object-position: 75% 30%;
+       object-position: 75% 30%;
   }
 }
 
@@ -2530,11 +2586,23 @@ ul {
 }
 
 .showWatch {
-  background: url(../img/watch-card/back-named.png);
-  background-repeat: no-repeat;
-  background-position: center;
   margin-top: -144px;
-  background-size: cover;
+  position: relative;
+}
+
+.showWatch__img-container {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  margin: 0  auto;
+}
+
+.showWatch__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .showWatch__flex {
@@ -2782,10 +2850,6 @@ ul {
 }
 
 @media (max-width: 1180px) {
-  .showWatch {
-    background: url(../img/watch-card/back-clear.png);
-    background-size: 100% 100%;
-  }
   .showWatch__flex {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -3819,11 +3883,18 @@ ul {
   text-align: center;
 }
 
+.cart__image-container {
+  width: 75%;
+  height: 290px;
+  padding: 30px 0;
+}
+
 .cart__image {
   display: block;
-  width: 75%;
-  padding-top: 38px;
-  padding-bottom: 38px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 .cart__label {
@@ -4393,6 +4464,7 @@ ul {
   text-transform: uppercase;
   font-family: Acrom, sans-serif;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .shops__deco {
@@ -4405,14 +4477,6 @@ ul {
 
 .shops__divider {
   width: 100%;
-}
-
-.shops__wrap {
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .shops__head {
@@ -4446,11 +4510,59 @@ ul {
   color: #000000;
   background-color: #f0f0f0;
   font-size: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .shops__item a {
   color: #000000;
   text-decoration: none;
+}
+
+@media (max-width: 1280px) {
+  .shops__head {
+    font-size: 12px;
+  }
+  .shops__item {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .shops__head {
+    font-size: 8px;
+  }
+  .shops__item {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 700px) {
+  .shops__grid {
+    -ms-grid-columns: 90px 80px 1fr 90px 80px;
+        grid-template-columns: 90px 80px 1fr 90px 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  .shops__grid {
+    -ms-grid-columns: 70px 70px 1fr 90px 38px;
+        grid-template-columns: 70px 70px 1fr 90px 38px;
+  }
+}
+
+@media (max-width: 425px) {
+  .shops__grid {
+    -ms-grid-columns: 60px 60px 1fr 80px 38px;
+        grid-template-columns: 60px 60px 1fr 80px 38px;
+  }
 }
 
 .service__block {

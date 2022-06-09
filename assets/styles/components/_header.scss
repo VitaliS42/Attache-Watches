@@ -30,6 +30,45 @@
   &__item:last-child {
     border: none;
   }
+  &__watch-details summary {
+    list-style: none;
+    font-family: Acrom;
+    font-size: 11.2px;
+    line-height: 2.5;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    color: #ffffff;
+    position: relative;
+  }
+  &__watch-details summary::after {
+    content: url(../img/header/arrow-down.svg);
+  }
+  &__watch-details-content {
+    position: absolute;
+    top: 85px;
+    background: black;
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+  }
+  &__details-link {
+    font-family: Acrom;
+    position: relative;
+    font-size: 11.2px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+  }
+  &__redline-special {
+    position: absolute;
+    bottom: 31px;
+    width: 27px;
+    height: 3px;
+    margin-left: 20px;
+    background-color: #ff001e;
+  }
   &__link {
     padding-top: 22px;
     font-family: Acrom;
@@ -104,7 +143,6 @@
     text-transform: uppercase;
     letter-spacing: 0.2em;
     color: #ffffff;
-    
   }
   &__language:hover {
     background-color: #535353;
@@ -128,6 +166,9 @@
     }
     &__link-marker {
       margin-top: 7px;
+    }
+    &__redline-special {
+      bottom: 7px;
     }
   }
   @media (max-width:590px) {
