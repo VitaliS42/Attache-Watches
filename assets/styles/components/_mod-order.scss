@@ -1,0 +1,79 @@
+.mod-order {
+  // display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.452);
+  top: 0;
+  height: 100vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  outline: none;
+  &__block {
+    position: relative;
+    background-color: white;
+    width: 600px;
+    height: 680px;
+    padding: 30px 60px 0;
+  }
+  &__close {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  &__heading {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 160%;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: Acrom, sans-serif;
+  }
+  &__text {
+    padding: 0 20px;
+    text-transform: uppercase;
+  }
+  &__form-block {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__input {
+    display: block;
+    padding: 15px 0 15px 5px;
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    outline: none;
+  }
+  &__textArea {
+    resize: none;
+    height: 100px;
+    font: 14px/1.4 'Acrom',sans-serif;
+  }
+  &__button {
+    padding: 15px 50px;
+    font-weight: 600;
+    border: 2px solid #000;
+    font-size: 90%;
+    transition: .3s ease-in-out;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    background: #000;
+    font: 14px/1.4 'Acrom',sans-serif;
+  }
+  &__button:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+  }
+}
