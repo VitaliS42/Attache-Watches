@@ -1,13 +1,25 @@
 .showWatch {
-  background: url(../img/watch-card/back-named.png);
-  background-repeat: no-repeat;
-  background-position: center;
+  // background: url(../img/watch-card/back-named.png);
+  // background-repeat: no-repeat;
+  // background-position: center;
   margin-top: -144px;
-  background-size: cover;
+  // background-size: cover;
+  position: relative;
+  &__img-container {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    margin: 0  auto;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   &__flex {
     display: flex;
     justify-content: space-between;
-    
     padding-top: 240px;
     padding-bottom: 80px;
   }
@@ -179,8 +191,6 @@
   }
 
   @media (max-width:1180px) {
-    background: url(../img/watch-card/back-clear.png);
-    background-size: 100% 100%;
     &__flex {
       align-items: center;
     }
